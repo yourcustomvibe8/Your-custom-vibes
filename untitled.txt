@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Products Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 300px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      width: 100%;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-price {
+      color: #28a745;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Custom Products Store</h1>
+</header>
+
+<div class="container">
+  <h2>Our Products</h2>
+  <div class="product">
+    <!-- Product 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="T-Shirt">
+      <div class="card-body">
+        <h3 class="card-title">Custom T-Shirt</h3>
+        <p class="card-price">₹500</p>
+        <button onclick="orderNow('T-Shirt')">Order Now</button>
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Mug">
+      <div class="card-body">
+        <h3 class="card-title">Custom Mug</h3>
+        <p class="card-price">₹300</p>
+        <button onclick="orderNow('Mug')">Order Now</button>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Phone Cover">
+      <div class="card-body">
+        <h3 class="card-title">Custom Phone Cover</h3>
+        <p class="card-price">₹400</p>
+        <button onclick="orderNow('Phone Cover')">Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Custom Products Store. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function orderNow(product) {
+    alert(`${product} added to cart. Proceed to payment.`);
+    // Redirect to a printing API or payment gateway
+    window.location.href = "https://www.printrov.com";
+  }
+</script>
+
+</body>
+</html>
